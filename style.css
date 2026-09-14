@@ -9,67 +9,59 @@ html {
 }
 
 body {
-    width: 100%;
-    min-height: 100vh;
     font-family: Arial, sans-serif;
-    background: #0b1120;
-    color: #e5e7eb;
+    background: #f7f8fc;
+    color: #202124;
     overflow-x: hidden;
 }
 
 nav {
     width: 100%;
-    min-height: 70px;
+    min-height: 72px;
     padding: 18px 7%;
-    background: #111827;
+    background: #1e293b;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #263244;
+    z-index: 999;
 }
 
 .logo {
-    color: #22d3ee;
-    font-size: 27px;
+    color: #38bdf8;
+    font-size: 28px;
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 nav ul {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 25px;
+    gap: 28px;
     list-style: none;
 }
 
-nav ul li {
-    margin: 0;
-}
-
 nav ul li a {
-    color: #e5e7eb;
+    color: #ffffff;
     text-decoration: none;
     font-size: 15px;
-    font-weight: bold;
-    transition: 0.3s;
+    font-weight: 600;
 }
 
 nav ul li a:hover {
-    color: #22d3ee;
+    color: #38bdf8;
 }
 
 .hero {
     width: 100%;
-    min-height: calc(100vh - 70px);
-    padding: 80px 8%;
+    min-height: calc(100vh - 72px);
+    padding: 70px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 70px;
-    background: linear-gradient(135deg, #0b1120, #111827);
+    gap: 60px;
+    background: linear-gradient(120deg, #e0f2fe, #f8fafc);
 }
 
 .left {
@@ -84,64 +76,59 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-    color: #f8fafc;
-    font-size: clamp(40px, 5vw, 64px);
-    line-height: 1.15;
-    margin-bottom: 20px;
+    font-size: 58px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    color: #0f172a;
 }
 
 .hero h1 span {
-    color: #22d3ee;
+    color: #0284c7;
 }
 
 .hero h2 {
-    color: #cbd5e1;
-    font-size: clamp(21px, 2.5vw, 30px);
+    font-size: 27px;
     line-height: 1.4;
     margin-bottom: 20px;
+    color: #334155;
 }
 
 .hero p {
     max-width: 600px;
-    color: #94a3b8;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.8;
-    margin-bottom: 25px;
+    color: #64748b;
+    margin-bottom: 28px;
 }
 
 .hero button {
-    padding: 14px 28px;
-    background: #22d3ee;
-    color: #0b1120;
     border: none;
-    border-radius: 8px;
+    padding: 14px 28px;
+    border-radius: 7px;
+    background: #0284c7;
+    color: white;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .hero button:hover {
-    background: #67e8f9;
-    transform: translateY(-3px);
+    background: #0369a1;
 }
 
 .right img {
     width: 330px;
     height: 330px;
-    max-width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 7px solid #22d3ee;
-    box-shadow: 0 0 45px rgba(34, 211, 238, 0.25);
+    border: 8px solid #38bdf8;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
 .about {
-    width: 100%;
     padding: 90px 8%;
-    background: #f8fafc;
-    color: #1e293b;
     text-align: center;
+    background: white;
 }
 
 .about h2,
@@ -149,36 +136,31 @@ nav ul li a:hover {
 .education h2,
 .certifications h2,
 .contact h2 {
-    font-size: clamp(32px, 4vw, 42px);
-    margin-bottom: 40px;
-}
-
-.about h2 {
-    color: #0f766e;
+    font-size: 38px;
+    margin-bottom: 35px;
+    color: #0f172a;
 }
 
 .about p {
     max-width: 900px;
     margin: auto;
-    color: #475569;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.9;
+    color: #64748b;
 }
 
 .skills {
-    width: 100%;
     padding: 90px 8%;
-    background: #ecfeff;
     text-align: center;
+    background: #f0f9ff;
 }
 
 .skills h2 {
-    color: #0f766e;
+    color: #0369a1;
 }
 
 .skills-container {
-    width: 100%;
-    max-width: 1000px;
+    max-width: 950px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -186,77 +168,70 @@ nav ul li a:hover {
 }
 
 .card {
-    min-height: 130px;
-    padding: 30px 20px;
+    min-height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffffff;
-    color: #134e4a;
-    border: 1px solid #a5f3fc;
-    border-radius: 14px;
-    font-size: 23px;
+    background: white;
+    border: 2px solid #bae6fd;
+    border-radius: 12px;
+    color: #0369a1;
+    font-size: 21px;
     font-weight: bold;
-    box-shadow: 0 8px 25px rgba(15, 118, 110, 0.08);
-    transition: 0.3s;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
 .card:hover {
-    background: #0f766e;
+    background: #0284c7;
     color: white;
-    transform: translateY(-7px);
+    transform: translateY(-5px);
 }
 
 .education {
-    width: 100%;
     padding: 90px 8%;
-    background: #ffffff;
     text-align: center;
+    background: white;
 }
 
 .education h2 {
-    color: #0f766e;
+    color: #0369a1;
 }
 
 .edu-card {
-    width: 100%;
     max-width: 750px;
     margin: auto;
     padding: 35px;
-    background: #f0fdfa;
-    border: 1px solid #ccfbf1;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(15, 118, 110, 0.08);
+    background: #f8fafc;
+    border-left: 6px solid #38bdf8;
+    border-radius: 10px;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
 }
 
 .edu-card h3 {
-    color: #134e4a;
     font-size: 23px;
     line-height: 1.5;
+    color: #1e293b;
     margin-bottom: 18px;
 }
 
 .edu-card p {
     color: #64748b;
-    font-size: 17px;
-    line-height: 1.7;
-    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 .certifications {
-    width: 100%;
     padding: 90px 8%;
-    background: #ecfeff;
     text-align: center;
+    background: #f0f9ff;
 }
 
 .certifications h2 {
-    color: #0f766e;
+    color: #0369a1;
 }
 
 .cert-container {
-    width: 100%;
-    max-width: 1000px;
+    max-width: 950px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -264,24 +239,17 @@ nav ul li a:hover {
 }
 
 .cert-card {
-    width: 100%;
     padding: 32px;
-    background: #ffffff;
-    border: 1px solid #a5f3fc;
-    border-radius: 16px;
+    background: white;
+    border-radius: 12px;
     text-align: left;
-    box-shadow: 0 8px 25px rgba(15, 118, 110, 0.08);
-    transition: 0.3s;
-}
-
-.cert-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 15px 35px rgba(15, 118, 110, 0.15);
+    border-top: 5px solid #38bdf8;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
 }
 
 .cert-card h3 {
-    color: #0f766e;
-    font-size: 23px;
+    color: #0369a1;
+    font-size: 22px;
     margin-bottom: 15px;
 }
 
@@ -289,48 +257,44 @@ nav ul li a:hover {
     color: #64748b;
     font-size: 16px;
     line-height: 1.7;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .contact {
-    width: 100%;
-    padding: 80px 8%;
-    background: #134e4a;
+    padding: 75px 8%;
     text-align: center;
+    background: #1e293b;
 }
 
 .contact h2 {
-    color: #ccfbf1;
+    color: #38bdf8;
 }
 
 .contact p {
-    color: #d1fae5;
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 8px;
-    word-break: break-word;
+    color: #e2e8f0;
+    font-size: 17px;
+    line-height: 1.8;
 }
 
 footer {
-    width: 100%;
-    padding: 22px 15px;
-    background: #020617;
+    padding: 20px;
     text-align: center;
+    background: #0f172a;
 }
 
 footer p {
-    color: #64748b;
+    color: #94a3b8;
     font-size: 14px;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
 
     nav {
-        padding: 18px 4%;
+        padding: 16px 4%;
     }
 
     nav ul {
-        gap: 15px;
+        gap: 16px;
     }
 
     nav ul li a {
@@ -338,13 +302,21 @@ footer p {
     }
 
     .hero {
-        padding: 70px 5%;
-        gap: 35px;
+        padding: 60px 5%;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
     }
 
     .right img {
-        width: 280px;
-        height: 280px;
+        width: 270px;
+        height: 270px;
     }
 
     .skills-container {
@@ -352,17 +324,18 @@ footer p {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 650px) {
 
     nav {
-        min-height: auto;
-        padding: 16px 10px;
-        flex-direction: column;
-        gap: 15px;
+        position: relative;
+        padding: 18px 15px;
+        display: block;
+        text-align: center;
     }
 
     .logo {
-        font-size: 25px;
+        font-size: 27px;
+        margin-bottom: 18px;
     }
 
     nav ul {
@@ -370,17 +343,17 @@ footer p {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px 14px;
+        gap: 12px 18px;
     }
 
     nav ul li a {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .hero {
-        width: 100%;
         min-height: auto;
         padding: 55px 20px;
+        display: flex;
         flex-direction: column-reverse;
         text-align: center;
         gap: 35px;
@@ -394,28 +367,29 @@ footer p {
         width: 100%;
     }
 
+    .right img {
+        width: 230px;
+        height: 230px;
+    }
+
     .hero h1 {
-        font-size: 37px;
-        line-height: 1.2;
+        font-size: 36px;
+        margin-bottom: 15px;
     }
 
     .hero h2 {
         font-size: 20px;
-        line-height: 1.5;
+        margin-bottom: 15px;
     }
 
     .hero p {
         font-size: 16px;
         line-height: 1.7;
-    }
-
-    .right img {
-        width: 220px;
-        height: 220px;
+        margin-bottom: 22px;
     }
 
     .hero button {
-        padding: 13px 24px;
+        padding: 13px 23px;
         font-size: 15px;
     }
 
@@ -432,30 +406,27 @@ footer p {
     .education h2,
     .certifications h2,
     .contact h2 {
-        font-size: 31px;
-        margin-bottom: 30px;
+        font-size: 30px;
+        margin-bottom: 28px;
     }
 
     .about p {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.8;
     }
 
     .skills-container {
         width: 100%;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 15px;
     }
 
     .card {
-        width: 100%;
-        min-height: 80px;
-        padding: 20px;
-        font-size: 20px;
+        min-height: 90px;
+        font-size: 18px;
     }
 
     .edu-card {
-        width: 100%;
         padding: 25px 18px;
     }
 
@@ -468,14 +439,12 @@ footer p {
     }
 
     .cert-container {
-        width: 100%;
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
     .cert-card {
-        width: 100%;
-        padding: 23px 18px;
+        padding: 25px 18px;
         text-align: center;
     }
 
@@ -485,34 +454,35 @@ footer p {
 
     .cert-card p {
         font-size: 15px;
-        line-height: 1.7;
     }
 
     .contact p {
         font-size: 15px;
-    }
-
-    footer {
-        padding: 18px 10px;
+        overflow-wrap: anywhere;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media (max-width: 400px) {
 
-    .logo {
-        font-size: 22px;
+    nav {
+        padding: 16px 10px;
     }
 
     nav ul {
-        gap: 8px 10px;
+        gap: 10px 12px;
     }
 
     nav ul li a {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .hero {
         padding: 45px 15px;
+    }
+
+    .right img {
+        width: 200px;
+        height: 200px;
     }
 
     .hero h1 {
@@ -523,9 +493,16 @@ footer p {
         font-size: 18px;
     }
 
-    .right img {
-        width: 190px;
-        height: 190px;
+    .hero p {
+        font-size: 15px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: 75px;
     }
 
     .about,
@@ -536,122 +513,7 @@ footer p {
         padding-left: 15px;
         padding-right: 15px;
     }
-}    align-items: center;
-    padding: 20px 6%;
-    background: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-}
-
-.logo {
-    color: #4f46e5;
-    font-size: 26px;
-    white-space: nowrap;
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.hero {
-    width: 100%;
-    min-height: 600px;
-    padding: 80px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-}
-
-.left {
-    width: 55%;
-}
-
-.right {
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero h1 {
-    font-size: 50px;
-    margin-bottom: 15px;
-}
-
-.hero h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-
-span {
-    color: #4f46e5;
-}
-
-.right img {
-    width: 320px;
-    height: 320px;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 6px solid #7671d4;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.hero button {
-    margin-top: 10px;
-    padding: 15px 30px;
-    background: #4f46e5;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.hero button:hover {
-    background: #3730a3;
-}
-
-.about {
-    width: 100%;
-    padding: 80px 8%;
-    background: white;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 40px;
-    color: #4f46e5;
-    margin-bottom: 30px;
-}
-
-.about p {
-    max-width: 900px;
+    }max-width: 900px;
     margin: auto;
     line-height: 1.8;
 }
